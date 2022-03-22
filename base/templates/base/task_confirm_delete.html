@@ -1,0 +1,7 @@
+<h1>Are u sure bout that ?</h1>
+<a href="{% url 'tasks'%}">Nope</a>
+
+<form method="POST" action="">
+    {% csrf_token %}
+    <input type="submit" name="submit" value="Yes">
+</form>
